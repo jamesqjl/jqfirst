@@ -7,5 +7,17 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        echo 'run test'
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        echo 'deployed'
+      }
+    }
+
   }
 }
